@@ -1,0 +1,159 @@
+<!-- khai báo cho trình duyệt biết phiên bản html5 mà chúng ta đang xài -->
+<!-- ở đây là phiên bản html5 mới nhất -->
+<!-- để comment code chúng ta dùng tổ hợp phím: windows thì ctrl + / ,,,  MAC thì command + /  -->
+<!-- có 2 loai thẻ html là cặp thẻ đóng mở vd head, body và thẻ khuyết vd meta -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Coffe</title>
+</head>
+<body>
+    <!-- thẻ tiêu đề giúp hiển thị nội dung tiêu đề của 1 trang web -->
+    <!-- gồm có 6 thẻ tiêu dề h1,h2,h3....,h6 kích thước chữ của tiêu đề sẽ dần nhỏ đi -->
+    <h1 style="background-color: #394a59;color: white;text-align: center;">CyberSoft Cafe</h1>
+    
+    <!-- thẻ a là thẻ liên kết, điều hướng người dùng đi tới các trang chúng ta muốn  -->
+    <!-- thẻ a có thuộc tính href nhận giá trị là đường dân cần điều hướng người dùng  -->
+    <!-- thuộc tính target nhận giá trị _bank giúp mở ra một tab mới khi điều hướng người dùng tới trang web  -->
+    <!-- href những đường dẫn giúp điều hướng người dùng qua các trang khác được gọi là liên kết ngoại  -->
+    <!-- target đường dẫn giúp điều hướng người dùng tới các thành phần trong web la liên kết nội -->
+    
+    <!-- ngoài việc có cặp thẻ đóng mở và thẻ khuyết, các thẻ html còn chia theo thẻ block và inline  -->
+    <!-- thẻ block là các thẻ chiếm đóng 1 dòng của trang web chúng ta  -->
+    <!-- thẻ inline thì kích thước chỉ bằng phần nội dung của nó  -->
+    <a href="https://kenh14.vn/" target="_blank">Home</a>
+    <a href="">Menu</a>
+    <a href="">Order</a>
+
+    <!-- thuộc tính size nhận vào một số giá trị giúp bạn tăng giảm kích thước thẻ hr -->
+    <!-- các giá trị đó sẽ có đơn vị đo là px, vd: 5px, 20px -->
+    <!-- ngoài px chúng ta còn có đơn vị đo là %, vd: 50% 30% -->
+    <hr size="5px" style="background-color: #808080; width: 50%;">
+    <h2 style="text-align: center; color: #9a6634;;">About our cafe</h2>
+
+    <p style="text-align: right; margin-left: 820px;">
+        Lorem ipsum dolor sit amet, consectetur adipicing elit. Cumque nobis harum accusamus.
+        Quis, commodi. <i>Repellat dolor ipsa voluptatibus veritatis vitae</i> 
+        animi quo cum saepe delectus nisi et munus amet expedita 
+        <b>aliquam temporinus volupatem placeat, molestias,</b> 
+        dolorem quisquam aut nihil beatae adipisci? Odio, 
+        quas blanditiis repellendus nostrum qui aperiam maganam unde.
+    </p>
+
+
+<!-- ------------------------------------------------------- -->
+    <p style="text-align: right;"></p>
+    <hr size="5px" style="background-color: #808080; width: 50%;">
+
+    <h2 style="text-align: center; color: #9a6634;">Special Items</h2>
+    <h3>The Coffe List 1</h3>
+    <!-- thẻ ul dùng để tạo ra một danh sách không có thứ tự -->
+    <ul>
+        <li>
+            <span style="color: blue;">Black Coffe</span>
+        </li>
+        <li>
+           <span style="color: red;">pink coffe</span> 
+        </li>
+        <li>
+           <span>Green</span> 
+        </li>
+    </ul>
+
+    <!-- thẻ img tạo ra hình ảnh trên trang web -->
+    <!-- thuộc tính src nhận vào giá trị là đường dẫn tới tấm hình -->
+    <!-- đây là ví dụ về đường dẫn tuyệt đối  -->
+    <!-- hạn chế xài đường dẫn tuyệt đối vì khả năng bị lỗi khi có sự thay đổi   -->
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVs4E1Vb7gY2825RgyD7IbX88LWguIuRh3g&usqp=CAU" alt=""> -->
+
+    <img src="./img/chilling-cafe-11.jpg" width="300px" alt="cafe11" >
+    <img src="./img/chilling-cafe-12.jpg" width="300px" alt="cafe12">
+
+    <h3>The coffe list 2</h3>
+    <!-- type: dùng để thay đổi kiểu thứ tụ I II III -->
+    <!-- start: dùng để chọn vị trí bắt đầu -->
+    <!-- reversed: dùng để đếm lùi -->
+    <ol type="I" start="" reversed>
+        <li>Soft Deli cup</li>
+        <li>Cofee art</li>
+        <li>Special Tea</li>
+    </ol>
+
+    <img src="./img/chilling-cafe-13.jpg" height="300px" alt="cafe13">
+
+    <hr size="5px" style="background-color: #808080; width: 50%;">
+    <h2 style="text-align: center; color: #9a6634;;">Menu</h2>
+
+    <!-- thẻ table dùng để tạo bảng -->
+    <table border="1" cellspacing="0" cellpadding="30px" style="width: 900px;" align="center" >
+        <!-- dòng 1 -->
+            <!-- sử dụng thẻ tr để tạo ra một dòng mới -->
+            <tr style="background-color: #c4cdd6;">
+                <!-- colspan: dùng để hợp nhất cột lại với nhau -->
+                <th colspan="2">Name</th>
+                <th>Type</th>
+                <th>Price</th>    
+            </tr>
+        <!-- dòng 2 -->
+            <tr>
+                <!-- rowspan: giúp hợp nhất các dòng với nhau, giá trị 
+                nhận vào là số dòng muốn hợp nhất -->
+                <td rowspan="4" style="background-image: url(./img/chilling-cafe-13.jpg); color: white;">Traditional Coffe</td>
+                <td rowspan="2">Vietnamese Coffe pin</td>
+                <td>Hot</td>
+                <td>60.000</td>
+            </tr>
+        <!-- dòng 3 -->
+            <tr>
+                <td>Cold</td>
+                <td>28.000</td>
+                
+            </tr>
+        <!-- dòng 4 -->
+            <tr>
+                <td rowspan="2">Milk coffe</td>
+                <td>Hot</td>
+                <td>38.000</td>
+            </tr>
+        <!-- dong 5  -->
+            <tr>
+                <td>Cold</td>
+                <td>54.000</td>
+            </tr>
+        <!-- dòng 6 -->
+        <tr>
+            <td rowspan="3" style="background-image: url(./img/chilling-cafe-11.jpg); color: white;">Expresso</td>
+            <td>Amecian Coffe</td>
+            <td rowspan="3">Hot</td>
+            <td>110.000</td>
+        </tr>
+
+        <tr>
+            <td>Machiato</td>
+            <td rowspan="2">40.000</td>
+        </tr>
+        <tr>
+            <td>Capuchino</td>
+        </tr>
+    </table>
+
+    <hr size="5px" style="background-color: #808080; width: 50%;">
+    <h2 style="text-align: center; color: #9a6634;">Talk to us</h2>
+    <p style="text-align: center;">
+        Reach us via 
+        <b>
+            Email: <a href="mailto:cybercoffe@gmail.com">cybercoffe@gmail.com</a>
+            or
+            <b>Hotline: </b>
+            <a href="">0909090909</a>
+            .Thank you
+        </b>
+    </p>
+
+</body>
+</html>
